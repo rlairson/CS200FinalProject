@@ -44,81 +44,81 @@ public:
 };
 
 class Barbarian : public CharClass {
-private:
+public:
 	      Barbarian();
-	     ~Barbarian();
+	     ~Barbarian() {}
 	void  setSkillProfs();
 	void  setToolProfs();
 };
 
 class Bard : public CharClass {
-private:
+public:
 	      Bard();
-	     ~Bard();
+	     ~Bard() {}
 	void  setSkillProfs();
 	void  setToolProfs();
 };
 
 class Cleric : public CharClass {
-private:
+public:
 	      Cleric();
-	     ~Cleric();
+	     ~Cleric() {}
 	void  setSkillProfs();
 	void  setToolProfs();
 };
 
 class Druid : public CharClass {
-private:
+public:
 	      Druid();
-	     ~Druid();
+	     ~Druid() {}
 	void  setSkillProfs();
 	void  setToolProfs();
 };
 
 class Fighter : public CharClass {
-private:
+public:
 	      Fighter();
-	     ~Fighter();
+	     ~Fighter() {}
 	void  setSkillProfs();
 	void  setToolProfs();
 };
 
 class Monk : public CharClass {
-private:
+public:
 	      Monk();
-	     ~Monk();
+	     ~Monk() {}
 	void  setSkillProfs();
 	void  setToolProfs();
 };
 
 class Paladin : public CharClass {
-private:
+public:
 	      Paladin();
-	     ~Paladin();
+	     ~Paladin() {}
 	void  setSkillProfs();
 	void  setToolProfs();
 };
 
 class Ranger : public CharClass {
-private:
+public:
 	      Ranger();
-	     ~Ranger();
+	     ~Ranger() {}
 	void  setSkillProfs();
 	void  setToolProfs();
 };
 
 class Rogue : public CharClass {
-private:
+public:
 	      Rogue();
-	     ~Rogue();
+	     ~Rogue() {}
 	void  setSkillProfs();
 	void  setToolProfs();
 };
 
 class Sorcerer : public CharClass {
-private:
+public:
 	      Sorcerer();
-	     ~Sorcerer();
+	     ~Sorcerer() {}
 	void  setSkillProfs();
 	void  setToolProfs();
 };
