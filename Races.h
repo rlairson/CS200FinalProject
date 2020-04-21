@@ -28,7 +28,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 	
 
@@ -60,7 +60,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 
 
@@ -93,7 +93,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 
 
@@ -127,7 +127,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 
 
@@ -162,7 +162,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 
 
@@ -195,7 +195,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 
 
@@ -228,7 +228,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 
 
@@ -262,7 +262,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 
 
@@ -296,7 +296,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 	string setAncestry();
 
@@ -329,7 +329,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 
 
@@ -362,7 +362,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 
 
@@ -395,7 +395,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 
 
@@ -429,7 +429,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 
 
@@ -462,7 +462,7 @@ public:
 	string setName();
 	int setHealth(int totalHealth);
 	string setAge();
-	string setAllignment();
+	string setAlignment();
 	int setSize();
 
 

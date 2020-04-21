@@ -27,7 +27,7 @@ HillDwarf::setAge() {
 
 }
 
-HillDwarf::setAllignment() {
+HillDwarf::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -82,7 +82,7 @@ MountainDwarf::setAge() {
 
 }
 
-MountainDwarf::setAllignment() {
+MountainDwarf::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -137,7 +137,7 @@ HighElf::setAge() {
 
 }
 
-HighElf::setAllignment() {
+HighElf::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -191,7 +191,7 @@ WoodElf::setAge() {
 
 }
 
-WoodElf::setAllignment() {
+WoodElf::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -246,7 +246,7 @@ DarkElf::setAge() {
 
 }
 
-DarkElf::setAllignment() {
+DarkElf::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -301,7 +301,7 @@ LightFoot::setAge() {
 
 }
 
-LightFoot::setAllignment() {
+LightFoot::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -356,7 +356,7 @@ Stout::setAge() {
 
 }
 
-Stout::setAllignment() {
+Stout::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -411,7 +411,7 @@ Human::setAge() {
 
 }
 
-Human::setAllignment() {
+Human::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -466,7 +466,7 @@ DragonBorn::setAge() {
 
 }
 
-DragonBorn::setAllignment() {
+DragonBorn::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -539,7 +539,7 @@ ForestGnome::setAge() {
 
 }
 
-ForestGnome::setAllignment() {
+ForestGnome::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -594,7 +594,7 @@ RockGnome::setAge() {
 
 }
 
-RockGnome::setAllignment() {
+RockGnome::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -650,7 +650,7 @@ HalfElf::setAge() {
 
 }
 
-HalfElf::setAllignment() {
+HalfElf::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -705,7 +705,7 @@ HalfOrc::setAge() {
 
 }
 
-HalfOrc::setAllignment() {
+HalfOrc::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -759,7 +759,7 @@ Tiefling::setAge() {
 
 }
 
-Tiefling::setAllignment() {
+Tiefling::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
