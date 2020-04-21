@@ -8,7 +8,7 @@
 
 int menu() {
 	int choice;
-	//system("cls");
+	system("cls");
 	cout << "\t\tDnD Character Creator v1.0"
 		<< "\n1. Roll Ability Scores"
 		<< "\n2. Select Race"
