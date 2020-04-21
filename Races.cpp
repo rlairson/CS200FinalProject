@@ -107,7 +107,7 @@ MountainDwarf::setAge() {
 
 }
 
-MountainDwarf::setalignment() {
+MountainDwarf::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -175,7 +175,7 @@ HighElf::setAge() {
 
 }
 
-HighElf::setalignment() {
+HighElf::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -242,7 +242,7 @@ WoodElf::setAge() {
 
 }
 
-WoodElf::setalignment() {
+WoodElf::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -310,7 +310,7 @@ DarkElf::setAge() {
 
 }
 
-DarkElf::setalignment() {
+DarkElf::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -378,7 +378,7 @@ LightFoot::setAge() {
 
 }
 
-LightFoot::setalignment() {
+LightFoot::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -446,7 +446,7 @@ Stout::setAge() {
 
 }
 
-Stout::setalignment() {
+Stout::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -514,7 +514,7 @@ Human::setAge() {
 
 }
 
-Human::setalignment() {
+Human::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -582,7 +582,7 @@ DragonBorn::setAge() {
 
 }
 
-DragonBorn::setalignment() {
+DragonBorn::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -668,7 +668,7 @@ ForestGnome::setAge() {
 
 }
 
-ForestGnome::setalignment() {
+ForestGnome::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -736,7 +736,7 @@ RockGnome::setAge() {
 
 }
 
-RockGnome::setalignment() {
+RockGnome::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -804,7 +804,7 @@ HalfElf::setAge() {
 
 }
 
-HalfElf::setalignment() {
+HalfElf::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -872,7 +872,7 @@ HalfOrc::setAge() {
 
 }
 
-HalfOrc::setalignment() {
+HalfOrc::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -939,7 +939,7 @@ Tiefling::setAge() {
 
 }
 
-Tiefling::setalignment() {
+Tiefling::setAlignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
