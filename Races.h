@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
-
-
+#include <iostream>
+using namespace std;
 
 class HillDwarf{
 
@@ -424,7 +424,7 @@ private:
 	int dexterity = 0;
 	int intelegence = 0;
 	int charisma = 0;
-	string skills[20] = ["Darkvision", "Relentless Endurance", "Savage Attacks"];
+	string skills[20] = {"Darkvision", "Relentless Endurance", "Savage Attacks"};
 	string proficiency[20] = ["intimidation"];
 	string language[20] = ["Common", "orc"];
 

@@ -6,6 +6,11 @@
 #include "charclasses.h"
 #endif
 
+#ifndef RACESV2_H
+#define RACESV2_H
+#include "RacesV2.h"
+#endif
+
 int menu() {
 	int choice;
 	system("cls");
@@ -14,37 +19,37 @@ int menu() {
 		<< "\n2. Select Race"
 		<< "\n3. Select Class"
 		<< "\n4. Swap Ability Scores"
-		<< "\n5. Set Level"
-		<< "\n6. Roll Hitpoints"
-		<< "\n7. View Character"
-		<< "\n8. Exit"
+		<< "\n5. Roll Hitpoints"
+		<< "\n6. View Character"
+		<< "\n7. Exit"
 		<< "\nEnter your choice: ";
 	cin >> choice;
 	return choice;
 }
 
+/*
 void selectRace(Player* p1) {
 	int race;
 	int subRace = 0;
 	system("cls");
-	cout << "\t\tSelect Race"
-		<< "\n1. Dwarf"
-		<< "\n2. Elf"
-		<< "\n3. Halfling"
-		<< "\n4. Human"
-		<< "\n5. Dragonborn"
-		<< "\n6. Gnome"
-		<< "\n7. Half-Elf"
-		<< "\n8. Half-Orc"
-		<< "\n9. Tiefling"
+	cout << "Select a race\n"
+		<< "\t1. Dwarf\n"
+		<< "\t2. Elf\n"
+		<< "\t3. Halfling\n"
+		<< "\t4. Human\n"
+		<< "\t5. Dragonborn\n"
+		<< "\t6. Gnome\n"
+		<< "\t7. Half-Elf\n"
+		<< "\t8. Half-Orc\n"
+		<< "\t9. Tiefling\n"
 		<< "\nEnter your choice: ";
 	cin >> race;
 	switch (race) {
 		case 1: //Dwarf
 			system("cls");
-			cout << "Select Race: "
-				<< "\n1. Hill Dwarf"
-				<< "\n2. Mountain Dwarf"
+			cout << "Select a subrace: "
+				<< "\t1. Hill Dwarf\n"
+				<< "\t2. Mountain Dwarf\n"
 				<< "\nEnter your choice: ";
 			cin >> subRace;
 			break;
@@ -79,6 +84,85 @@ void selectRace(Player* p1) {
 	//p1->setRace(race, subRace);
 	//Pass race and subrace to races.h
 }
+*/
+
+int selectRace() {
+	int choice;
+	system("cls");
+	cout << "\t\tSelect Class"
+		<< "\n 1. Hill Dwarf"
+		<< "\n 2. Mountain Dwarf"
+		<< "\n 3. High Elf"
+		<< "\n 4. Wood Elf"
+		<< "\n 5. Dark Elf"
+		<< "\n 6. Lightfoot (Halfling)"
+		<< "\n 7. Stout Halfling)"
+		<< "\n 8. Human"
+		<< "\n 9. Dragonborn"
+		<< "\n10. Forest Gnome"
+		<< "\n11. Rock Gnome"
+		<< "\n12. Half Elf"
+		<< "\n13. Half Orc"
+		<< "\n14. Tiefling"
+		<< "\nEnter your choice: ";
+	cin >> choice;
+	return choice;
+}
+
+void setRace(Race **p1Race) {
+	int playerRace = selectRace();
+
+	switch (playerRace) {
+	case HILLDWARF:
+		*p1Race = new HillDwarf();
+		break;
+	case MOUNTAINDWARF:
+		*p1Race = new MountainDwarf();
+		break;
+	case HIGHELF:
+		*p1Race = new HighElf();
+		break;
+	case WOODELF:
+		*p1Race = new WoodElf();
+		break;
+	case DARKELF:
+		*p1Race = new DarkElf();
+		break;
+	case LIGHTFOOT:
+		*p1Race = new Lightfoot();
+		break;
+	case STOUT:
+		*p1Race = new Stout();
+		break;
+	case HUMAN:
+		*p1Race = new Human();
+		break;
+	case DRAGONBORN:
+		*p1Race = new DragonBorn();
+		break;
+	case FORESTGNOME:
+		*p1Race = new ForestGnome();
+		break;
+	case ROCKGNOME:
+		*p1Race = new RockGnome();
+		break;
+	case HALFELF:
+		*p1Race = new HalfElf();
+		break;
+	case HALFORC:
+		*p1Race = new HalfOrc();
+		break;
+	case TIEFLING:
+		*p1Race = new Tiefling();
+		break;
+	default:
+		cout << "Error in setRace()" << endl;
+	}
+
+	(*p1Race)->setName();
+	(*p1Race)->setAge();
+	(*p1Race)->setAlignment();
+}
 
 int selectClass() {
 	int choice;
@@ -99,8 +183,6 @@ int selectClass() {
 		<< "\nEnter your choice: ";
 	cin >> choice;
 	return choice;
-	//p1->setClass(choice);
-	//Pass choice to charclasses.h
 }
 
 void setClass(CharClass **p1Class) {
@@ -163,6 +245,7 @@ void rollScores(Player* p1) {
 	p1->setAreScoresRolled(true);
 }
 
+/*
 void viewCharacter(Player* p1) {
 	//Will require a pointer to the Player object
 	system("cls");
@@ -175,6 +258,7 @@ void viewCharacter(Player* p1) {
 	cout //<< "Hit Dice: 1d" << p1->getHitDice()
 		<< "\nProficiency Bonus: (+" << p1->getProficiencyBonus()<<")"<< endl;
 }
+*/
 
 void swapScores(Player* p1) {
 	//input integers corresponding to ability scores and swap, then refresh screen
@@ -230,6 +314,7 @@ void rollHitpoints(Player* p1) {	//Only allow this once
 	//Pass p1 constitution score to charclasses.h
 }
 
+/*
 void setLevel(Player* p1) {
 	int level = 1;
 	system("cls");
@@ -242,14 +327,16 @@ void setLevel(Player* p1) {
 	p1->setPlayerLevel(level);
 	cout << "\nLevel: " << p1->getPlayerLevel() << endl;
 }
+*/
 
 int main()
 {
 	int choice = 0;
 	Player     p1;
 	CharClass *p1Class;
+	Race      *p1Race;
 
-	while (choice != 8) {
+	while (choice != 7) {
 		choice = menu();
 		switch (choice) {
 			case 1: //Roll Ability Scores
@@ -262,6 +349,12 @@ int main()
 				system("pause");
 				break;
 			case 2:	//Select Race
+				setRace(&p1Race);
+
+				cout << p1Race->getPlayerName() << endl;
+				cout << p1Race->getRaceName()   << endl;
+				cout << p1Race->getAlignment()  << endl;
+
 				break;
 			case 3: //Select Class
 				setClass(&p1Class);
@@ -279,11 +372,7 @@ int main()
 				swapScores(&p1);
 				system("pause");
 				break;
-			case 5: //Set Level
-				setLevel(&p1);
-				system("pause");
-				break;
-			case 6: //Roll Hitpoints
+			case 5: //Roll Hitpoints
 				/*
 				if (p1.getIsHPSet() == false) {
 					rollHitpoints(&p1);
@@ -294,11 +383,11 @@ int main()
 				*/
 				system("pause");
 				break;
-			case 7:	//View Character
+			case 6:	//View Character
 				viewCharacter(&p1);
 				system("pause");
 				break;
-			case 8:	//Exit
+			case 7:	//Exit
 				break;
 			default:
 				break;

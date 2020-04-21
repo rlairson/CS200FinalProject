@@ -17,10 +17,12 @@ Player::Player(int pRace, int pSubRace, int pClass) {
 	srand(time(NULL));
 }*/
 
+/*
 void Player::setPlayerLevel(int level) {
 	playerLevel = level;
 	setProficiencyBonus(playerLevel);
 }
+*/
 
 int Player::getPlayerLevel() {
 	return playerLevel;
@@ -625,6 +627,7 @@ void Player::setAreScoresRolled(bool b) {
 	areScoresRolled = b;
 }
 
+/*
 void Player::setProficiencyBonus(int level) {
 	switch (level) {
 		case 1:
@@ -661,7 +664,10 @@ void Player::setProficiencyBonus(int level) {
 			break;
 	}
 }
+*/
 
+/*
 int Player::getProficiencyBonus() {
 	return proficiencyBonus;
 }
+*/

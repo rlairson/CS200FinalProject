@@ -52,8 +52,8 @@ class Player {
 		bool getAreScoresRolled();
 		void setAreScoresRolled(bool b);
 
-		void setProficiencyBonus(int level);
-		int getProficiencyBonus();
+		//void setProficiencyBonus(int level);
+		//int getProficiencyBonus();
 
 
 	private:
