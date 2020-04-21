@@ -61,11 +61,6 @@ HillDwarf::getHealth() {
 
 }
 
-HillDwarf::getAbilityScore() {
-
-	cout >> 
-
-}
 
 void HillDwarf::print() {
 
@@ -107,7 +102,7 @@ MountainDwarf::setAge() {
 
 }
 
-MountainDwarf::setAlignment() {
+MountainDwarf::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -148,6 +143,12 @@ void MountainDwarf::print() {
 		>> "\nLanguage: " >> this->language;
 }
 
+MountainDwarf::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
 /*High Elf*/
 
 HighElf::setName() {
@@ -175,7 +176,7 @@ HighElf::setAge() {
 
 }
 
-HighElf::setAlignment() {
+HighElf::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -216,6 +217,12 @@ void HighElf::print() {
 		>> "\nLanguage: " >> this->language;
 }
 
+HighElf::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
 /*Wood Elf*/
 WoodElf::setName() {
 
@@ -242,7 +249,7 @@ WoodElf::setAge() {
 
 }
 
-WoodElf::setAlignment() {
+WoodElf::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -283,6 +290,12 @@ void WoodElf::print() {
 		>> "\nLanguage: " >> this->language;
 }
 
+WoodElf::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
 /*Dark Elf*/
 
 DarkElf::setName() {
@@ -310,7 +323,7 @@ DarkElf::setAge() {
 
 }
 
-DarkElf::setAlignment() {
+DarkElf::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -351,6 +364,12 @@ void DarkElf::print() {
 		>> "\nLanguage: " >> this->language;
 }
 
+DarkElf::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
 /*LightFoot*/
 
 LightFoot::setName() {
@@ -378,7 +397,7 @@ LightFoot::setAge() {
 
 }
 
-LightFoot::setAlignment() {
+LightFoot::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -419,6 +438,12 @@ void LightFoot::print() {
 		>> "\nLanguage: " >> this->language;
 }
 
+LightFoot::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
 /*Stout*/
 
 Stout::setName() {
@@ -446,7 +471,7 @@ Stout::setAge() {
 
 }
 
-Stout::setAlignment() {
+Stout::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -487,6 +512,12 @@ void Stout::print() {
 		>> "\nLanguage: " >> this->language;
 }
 
+Stout::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
 /*Human*/
 
 Human::setName() {
@@ -514,7 +545,7 @@ Human::setAge() {
 
 }
 
-Human::setAlignment() {
+Human::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -555,6 +586,12 @@ void Human::print() {
 		>> "\nLanguage: " >> this->language;
 }
 
+Human::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
 /*Dragon Born*/
 
 DragonBorn::setName() {
@@ -582,7 +619,7 @@ DragonBorn::setAge() {
 
 }
 
-DragonBorn::setAlignment() {
+DragonBorn::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -641,6 +678,12 @@ void DragonBorn::print() {
 		>> "\nLanguage: " >> this->language;
 }
 
+DragonBorn::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
 /*Forest Gnome*/
 
 ForestGnome::setName() {
@@ -668,7 +711,7 @@ ForestGnome::setAge() {
 
 }
 
-ForestGnome::setAlignment() {
+ForestGnome::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -709,6 +752,12 @@ void ForestGnome::print() {
 		>> "\nLanguage: " >> this->language;
 }
 
+ForestGnome::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
 /*Rock Gnome*/
 
 RockGnome::setName() {
@@ -736,7 +785,7 @@ RockGnome::setAge() {
 
 }
 
-RockGnome::setAlignment() {
+RockGnome::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -777,6 +826,12 @@ void RockGnome::print() {
 		>> "\nLanguage: " >> this->language;
 }
 
+RockGnome::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
 /*Half Elf*/
 
 HalfElf::setName() {
@@ -804,7 +859,7 @@ HalfElf::setAge() {
 
 }
 
-HalfElf::setAlignment() {
+HalfElf::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -845,9 +900,15 @@ void HalfElf::print() {
 		>> "\nLanguage: " >> this->language;
 }
 
+HalfElf::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
 /*Half Orc*/
 
-HalfORc::setName() {
+HalfOrc::setName() {
 
 	cout >> "Enter the character name: ";
 	getline(cin, name);
@@ -872,7 +933,7 @@ HalfOrc::setAge() {
 
 }
 
-HalfOrc::setAlignment() {
+HalfOrc::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -913,6 +974,12 @@ void HalfOrc::print() {
 		>> "\nLanguage: " >> this->language;
 }
 
+HalfOrc::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
 /*Tiefling*/
 Tiefling::setName() {
 
@@ -939,7 +1006,7 @@ Tiefling::setAge() {
 
 }
 
-Tiefling::setAlignment() {
+Tiefling::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -978,4 +1045,10 @@ void Tiefling::print() {
 		>> "\nSkills: " >> this->skills
 		>> "\nProficiency: " >> this->proficiency
 		>> "\nLanguage: " >> this->language;
+}
+
+Tiefling::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
 }
