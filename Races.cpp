@@ -29,7 +29,7 @@ HillDwarf::setAge() {
 
 HillDwarf::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -37,10 +37,10 @@ HillDwarf::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -84,7 +84,7 @@ MountainDwarf::setAge() {
 
 MountainDwarf::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -92,10 +92,10 @@ MountainDwarf::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -139,7 +139,7 @@ HighElf::setAge() {
 
 HighElf::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -147,10 +147,10 @@ HighElf::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -193,7 +193,7 @@ WoodElf::setAge() {
 
 WoodElf::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -201,10 +201,10 @@ WoodElf::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -248,7 +248,7 @@ DarkElf::setAge() {
 
 DarkElf::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -256,10 +256,10 @@ DarkElf::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -303,7 +303,7 @@ LightFoot::setAge() {
 
 LightFoot::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -311,10 +311,10 @@ LightFoot::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -358,7 +358,7 @@ Stout::setAge() {
 
 Stout::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -366,10 +366,10 @@ Stout::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -413,7 +413,7 @@ Human::setAge() {
 
 Human::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -421,10 +421,10 @@ Human::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -468,7 +468,7 @@ DragonBorn::setAge() {
 
 DragonBorn::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -476,10 +476,10 @@ DragonBorn::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -541,7 +541,7 @@ ForestGnome::setAge() {
 
 ForestGnome::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -549,10 +549,10 @@ ForestGnome::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -596,7 +596,7 @@ RockGnome::setAge() {
 
 RockGnome::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -604,10 +604,10 @@ RockGnome::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -652,7 +652,7 @@ HalfElf::setAge() {
 
 HalfElf::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -660,10 +660,10 @@ HalfElf::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -707,7 +707,7 @@ HalfOrc::setAge() {
 
 HalfOrc::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -715,10 +715,10 @@ HalfOrc::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 
@@ -761,7 +761,7 @@ Tiefling::setAge() {
 
 Tiefling::setAllignment() {
 
-	cout >> "List of allignments:"
+	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
 		>> "Chaotic Neutral\n"
 		>> "Chaotic Lawful\n"
@@ -769,10 +769,10 @@ Tiefling::setAllignment() {
 		>> "Lawful Good\n"
 		>> "Lawful Neutral\n"
 		>> "Lawful Evil\n";
-	cout >> "Enter the allignment of the character: ";
-	getline(cin, allignment);
+	cout >> "Enter the alignment of the character: ";
+	getline(cin, alignment);
 
-	this->allignment = allignment;
+	this->alignment = alignment;
 
 }
 

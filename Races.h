@@ -10,7 +10,7 @@ private:
 	int health;
 	string race = "HillDwarf";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 25;
 	int strength = 0;
@@ -43,7 +43,7 @@ private:
 	int health;
 	string race = "Mountain Dwarf";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 25;
 	int strength = 2;
@@ -75,7 +75,7 @@ private:
 	int health;
 	string race = "High Elf";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 30;
 	int strength = 0;
@@ -109,7 +109,7 @@ private:
 	int health;
 	string race = "Wood Elf";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 35;
 	int strength = 0;
@@ -144,7 +144,7 @@ private:
 	int health;
 	string race = "Dark Elf";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 30;
 	int strength = 0;
@@ -178,7 +178,7 @@ private:
 	int health;
 	string race = "LightFoot";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 25;
 	int strength = 0;
@@ -211,7 +211,7 @@ private:
 	int health;
 	string race = "Stout";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 25;
 	int strength = 0;
@@ -244,7 +244,7 @@ private:
 	int health;
 	string race = "Human";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 30;
 	string abilityScoreIncrease = "any +1";
@@ -278,7 +278,7 @@ private:
 	int health;
 	string race = "DragonBorn";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 30;
 	int strength = 2;
@@ -312,7 +312,7 @@ private:
 	int health;
 	string race = "Forest Gnome";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 25;
 	int strength = 0;
@@ -345,7 +345,7 @@ private:
 	int health;
 	string race = "Rock Gnome";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 25;
 	int strength = 0;
@@ -378,7 +378,7 @@ private:
 	int health;
 	string race = "Half Elf";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 30;
 	int strength;
@@ -412,7 +412,7 @@ private:
 	int health;
 	string race = "Half Orc";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 30;
 	int strength = 2;
@@ -444,7 +444,7 @@ private:
 	int health;
 	string race = "Tiefling";
 	string age;
-	string allignment;
+	string alignment;
 	int size;
 	int speed = 30;
 	int strength = 0;
