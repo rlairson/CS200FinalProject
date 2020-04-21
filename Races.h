@@ -159,7 +159,7 @@ private:
 	string skills[20] = ["Darkvision", "Fey Ancestry", "Trance", "Superior Darkvision of 120ft.", "Sunlight Sensitivity"];
 	string proficiency[20] = ["perception", "Rapiers", "Short Sword", "Hand Crossbows"];
 	string spells[3] = ["Dancing Lights", "Faerie Fire(Level 3)", "Darkness (Level 5)"];
-	string languages[20] = ["Elvish", "Common"];
+	string language[20] = ["Elvish", "Common"];
 
 public:
 	string setName();
@@ -192,7 +192,7 @@ private:
 	int charisma = 1;
 	string skills[20] = ["Brave", "Lucky", "Halfling Nimbleness", "Naturally Stealthy"];
 	string proficiency[20];
-	string languages[20] = ["Common", "Halfling"];
+	string language[20] = ["Common", "Halfling"];
 
 public:
 	string setName();
@@ -225,7 +225,7 @@ private:
 	int charisma = 0;
 	string skills[20] = ["Brave", "Lucky", "Halfling Nimbleness", "Stout Resilience"];
 	string proficiency[20];
-	string languages[20] = ["Common", "Halfling"];
+	string language[20] = ["Common", "Halfling"];
 
 public:
 	string setName();
@@ -259,7 +259,7 @@ private:
 	int charisma = 1;
 	string skills[20];
 	string proficiency[20] = [""];
-	string languages[20] = ["Common"];
+	string language[20] = ["Common"];
 
 public:
 	string setName();
@@ -292,7 +292,7 @@ private:
 	int charisma = 1;
 	string skills[20] = ["Draconic Ancestry", "Breath Weapon", "Damage Resistance"];
 	string proficiency[20];
-	string languages[20] = ["Common", "Draconic"];
+	string language[20] = ["Common", "Draconic"];
 	string Ancestry;
 
 public:
@@ -327,7 +327,7 @@ private:
 	int charisma = 0;
 	string skills[20] = ["Darkvision", "Gnome Cunning", " Natural Illusionist", "Speaking with Small Beast"];
 	string proficiency[20];
-	string languages[20] = ["Common", "Gnome"];
+	string language[20] = ["Common", "Gnome"];
 
 public:
 	string setName();
@@ -360,7 +360,7 @@ private:
 	int charisma = 0;
 	string skills[20] = ["Darkvision", "Gnome Cunning", "Artificer's Lore", "Tinkers"];
 	string proficiency[20];
-	string languages[20] = ["Common", "Gnome"];
+	string language[20] = ["Common", "Gnome"];
 
 public:
 	string setName();
@@ -393,7 +393,7 @@ private:
 	int charisma;
 	string skills[20] = ["Darkvision", "Fey ancestry"];
 	string proficiency[20];
-	string languages[20] = ["Common", "Elvish"];
+	string language[20] = ["Common", "Elvish"];
 
 public:
 	string setName();
@@ -426,7 +426,7 @@ private:
 	int charisma = 0;
 	string skills[20] = ["Darkvision", "Relentless Endurance", "Savage Attacks"];
 	string proficiency[20] = ["intimidation"];
-	string languages[20] = ["Common", "orc"];
+	string language[20] = ["Common", "orc"];
 
 public:
 	string setName();
@@ -459,7 +459,7 @@ private:
 	int charisma = 1;
 	string skills[20] = ["Darkvision", "Hellish Resistance", "Infernal Legacy"];
 	string proficiency[20];
-	string languages[20] = ["Common", "Infernal"];
+	string language[20] = ["Common", "Infernal"];
 	string infernalLegacy[3] = ["thaumaturgy", "Hellish Rebuke(Level 3)", "Darkness (Level 5)"]
 
 public:
