@@ -29,65 +29,6 @@ int menu() {
 	return choice;
 }
 
-/*
-void selectRace(Player* p1) {
-	int race;
-	int subRace = 0;
-	system("cls");
-	cout << "Select a race\n"
-		<< "\t1. Dwarf\n"
-		<< "\t2. Elf\n"
-		<< "\t3. Halfling\n"
-		<< "\t4. Human\n"
-		<< "\t5. Dragonborn\n"
-		<< "\t6. Gnome\n"
-		<< "\t7. Half-Elf\n"
-		<< "\t8. Half-Orc\n"
-		<< "\t9. Tiefling\n"
-		<< "\nEnter your choice: ";
-	cin >> race;
-	switch (race) {
-		case 1: //Dwarf
-			system("cls");
-			cout << "Select a subrace: "
-				<< "\t1. Hill Dwarf\n"
-				<< "\t2. Mountain Dwarf\n"
-				<< "\nEnter your choice: ";
-			cin >> subRace;
-			break;
-		case 2: //Elf
-			system("cls");
-			cout << "Select Race: "
-				<< "\n1. High Elf"
-				<< "\n2. Wood Elf"
-				<< "\n3. Dark Elf"
-				<< "\nEnter your choice: ";
-			cin >> subRace;
-			break;
-		case 3: //Halfing
-			system("cls");
-			cout << "Select Race: "
-				<< "\n1. Lightfoot"
-				<< "\n2. Stout"
-				<< "\nEnter your choice: ";
-			cin >> subRace;
-			break;
-		case 6: //Gnome
-			system("cls");
-			cout << "Select Race: "
-				<< "\n1. Forest Gnome"
-				<< "\n2. Rock Gnome"
-				<< "\nEnter your choice: ";
-			cin >> subRace;
-			break;
-		default:
-			break;
-	}
-	//p1->setRace(race, subRace);
-	//Pass race and subrace to races.h
-}
-*/
-
 int selectRace() {
 	int choice;
 	system("cls");
@@ -236,8 +177,6 @@ void setClass(CharClass **p1Class) {
 	(*p1Class)->setSkillProfs();
 }
 
-		
-
 void rollScores(Player* p1) {
 	//Will require a pointer to the Player object
 	system("cls");
@@ -246,7 +185,6 @@ void rollScores(Player* p1) {
 	p1->printPlayerStats();
 	p1->setAreScoresRolled(true);
 }
-
 
 void viewCharacter(Player* p1, CharClass** p1Class, Race** p1Race) {
 	system("cls");
@@ -276,7 +214,6 @@ void viewCharacter(Player* p1, CharClass** p1Class, Race** p1Race) {
 		<< "\nLanguages: " << (*p1Race)->getLanguages()
 		<< endl;
 }
-
 
 void swapScores(Player* p1) {
 	//input integers corresponding to ability scores and swap, then refresh screen
@@ -352,37 +289,46 @@ int main()
 				system("pause");
 				break;
 			case 2:	//Select Race
-				setRace(&p1Race);
-
-				cout << p1Race->getPlayerName() << endl;
-				cout << p1Race->getRaceName()   << endl;
-				cout << p1Race->getAlignment()  << endl;
-
+				if (p1.getIsRaceSet() == false) {
+					setRace(&p1Race);
+					p1.setIsRaceSet(true);
+				}
+				else {
+					cout << "\n\nRace has already been set." << endl;
+				}
 				system("pause");
 				break;
 			case 3: //Select Class
-				setClass(&p1Class);
-
-				/* Testing to make sure the function works
-				cout << p1Class->getClassName()  << endl;
-				cout << p1Class->getSkillProfs() << endl;
-				cout << p1Class->getArmorProfs() << endl;
-				cout << p1Class->getToolProfs()  << endl;
-				*/
-
+				if (p1.getIsClassSet() == false) {
+					setClass(&p1Class);
+					p1.setIsClassSet(true);
+				}
+				else {
+					cout << "\n\nClass has already been set." << endl;
+				}
 				system("pause");
 				break;
 			case 4: //Swap Scores		//Once HP has been rolled, disallow swapping scores
-				swapScores(&p1);
+				if (p1.getIsHPSet() == false) {
+					swapScores(&p1);
+				}
+				else {
+					cout << "HP has been set, you cannot swap stats." << endl;
+				}
 				system("pause");
 				break;
 			case 5: //Roll Hitpoints
-				rollHitpoints(&p1, &p1Class, &p1Race);
+				if (p1.getIsHPSet() == false) {
+					rollHitpoints(&p1, &p1Class, &p1Race);
+					p1.setIsHPSet(true);
+				}
+				else {
+					cout << "\n\nHP has already been set." << endl;
+				}
 				system("pause");
 				break;
 			case 6:	//View Character
 				viewCharacter(&p1, &p1Class, &p1Race);
-
 				system("pause");
 				break;
 
