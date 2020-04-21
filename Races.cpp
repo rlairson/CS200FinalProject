@@ -55,6 +55,31 @@ HillDwarf::setSize() {
 
 }
 
+HillDwarf::getHealth() {
+
+	cout >> "Health: " >> this->health >> endl;
+
+}
+
+HillDwarf::getAbilityScore() {
+
+	cout >> 
+
+}
+
+void HillDwarf::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
+}
+
 
 /*Mountain Dwarf*/
 MountainDwaft::setName() {
@@ -82,7 +107,7 @@ MountainDwarf::setAge() {
 
 }
 
-MountainDwarf::setAlignment() {
+MountainDwarf::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -108,6 +133,19 @@ MountainDwarf::setSize() {
 	this->size = size;
 
 
+}
+
+void MountainDwarf::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
 }
 
 /*High Elf*/
@@ -137,7 +175,7 @@ HighElf::setAge() {
 
 }
 
-HighElf::setAlignment() {
+HighElf::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -163,6 +201,19 @@ HighElf::setSize() {
 	this->size = size;
 
 
+}
+
+void HighElf::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
 }
 
 /*Wood Elf*/
@@ -191,7 +242,7 @@ WoodElf::setAge() {
 
 }
 
-WoodElf::setAlignment() {
+WoodElf::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -217,6 +268,19 @@ WoodElf::setSize() {
 	this->size = size;
 
 
+}
+
+void WoodElf::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
 }
 
 /*Dark Elf*/
@@ -246,7 +310,7 @@ DarkElf::setAge() {
 
 }
 
-DarkElf::setAlignment() {
+DarkElf::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -272,6 +336,19 @@ DarkElf::setSize() {
 	this->size = size;
 
 
+}
+
+void DarkElf::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
 }
 
 /*LightFoot*/
@@ -301,7 +378,7 @@ LightFoot::setAge() {
 
 }
 
-LightFoot::setAlignment() {
+LightFoot::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -327,6 +404,19 @@ LightFoot::setSize() {
 	this->size = size;
 
 
+}
+
+void LightFoot::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
 }
 
 /*Stout*/
@@ -356,7 +446,7 @@ Stout::setAge() {
 
 }
 
-Stout::setAlignment() {
+Stout::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -382,6 +472,19 @@ Stout::setSize() {
 	this->size = size;
 
 
+}
+
+void Stout::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
 }
 
 /*Human*/
@@ -411,7 +514,7 @@ Human::setAge() {
 
 }
 
-Human::setAlignment() {
+Human::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -437,6 +540,19 @@ Human::setSize() {
 	this->size = size;
 
 
+}
+
+void Human::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
 }
 
 /*Dragon Born*/
@@ -466,7 +582,7 @@ DragonBorn::setAge() {
 
 }
 
-DragonBorn::setAlignment() {
+DragonBorn::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -512,6 +628,19 @@ DragonBorn::setAncestry() {
 	this->setAncestry = ancestry;
 }
 
+void DragonBorn::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
+}
+
 /*Forest Gnome*/
 
 ForestGnome::setName() {
@@ -539,7 +668,7 @@ ForestGnome::setAge() {
 
 }
 
-ForestGnome::setAlignment() {
+ForestGnome::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -565,6 +694,19 @@ ForestGnome::setSize() {
 	this->size = size;
 
 
+}
+
+void ForestGnome::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
 }
 
 /*Rock Gnome*/
@@ -594,7 +736,7 @@ RockGnome::setAge() {
 
 }
 
-RockGnome::setAlignment() {
+RockGnome::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -622,6 +764,18 @@ RockGnome::setSize() {
 
 }
 
+void RockGnome::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
+}
 
 /*Half Elf*/
 
@@ -650,7 +804,7 @@ HalfElf::setAge() {
 
 }
 
-HalfElf::setAlignment() {
+HalfElf::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -676,6 +830,19 @@ HalfElf::setSize() {
 	this->size = size;
 
 
+}
+
+void HalfElf::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
 }
 
 /*Half Orc*/
@@ -705,7 +872,7 @@ HalfOrc::setAge() {
 
 }
 
-HalfOrc::setAlignment() {
+HalfOrc::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -731,6 +898,19 @@ HalfOrc::setSize() {
 	this->size = size;
 
 
+}
+
+void HalfOrc::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
 }
 
 /*Tiefling*/
@@ -759,7 +939,7 @@ Tiefling::setAge() {
 
 }
 
-Tiefling::setAlignment() {
+Tiefling::setalignment() {
 
 	cout >> "List of alignments:"
 		>> "Chaotic Evil\n"
@@ -785,4 +965,17 @@ Tiefling::setSize() {
 	this->size = size;
 
 
+}
+
+void Tiefling::print() {
+
+	cout >> "Name: " >> this->name
+		>> "\nRace: " >> this->race
+		>> "\nAge: " >> this->age
+		>> "\nAlignment: " >> this->alignment
+		>> "\nSize: " >> this->size
+		>> "\nSpeed" >> this->speed
+		>> "\nSkills: " >> this->skills
+		>> "\nProficiency: " >> this->proficiency
+		>> "\nLanguage: " >> this->language;
 }
