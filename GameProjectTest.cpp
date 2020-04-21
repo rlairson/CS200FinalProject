@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include"player.h"
 
 #ifndef CHARCLASSES_H
@@ -21,7 +22,8 @@ int menu() {
 		<< "\n4. Swap Ability Scores"
 		<< "\n5. Roll Hitpoints"
 		<< "\n6. View Character"
-		<< "\n7. Exit"
+		<< "\n7. Save to File"
+		<< "\n8. Exit"
 		<< "\nEnter your choice: ";
 	cin >> choice;
 	return choice;
@@ -245,20 +247,36 @@ void rollScores(Player* p1) {
 	p1->setAreScoresRolled(true);
 }
 
-/*
-void viewCharacter(Player* p1) {
-	//Will require a pointer to the Player object
+
+void viewCharacter(Player* p1, CharClass** p1Class, Race** p1Race) {
 	system("cls");
-	cout << "\t\tPlayer Character\n"
-		//<< p1->getCharacter()
-		<< "\nLevel: " << p1->getPlayerLevel()
-		<< "\nAbility Scores: ";
-	p1->printPlayerStats();
-	//p1->printHitpoints();
-	cout //<< "Hit Dice: 1d" << p1->getHitDice()
-		<< "\nProficiency Bonus: (+" << p1->getProficiencyBonus()<<")"<< endl;
+	cout << "\t\tPlayer Character" << "\n"
+		<< "\nRace: " << (*p1Race)->getRaceName()
+		<< "\nClass: " << (*p1Class)->getClassName()
+		<< "\nCharacter Name: " << (*p1Race)->getPlayerName()
+		<< "\nAbility Scores: "
+		<< "\n\tStrength: " << p1->getStr() + (*p1Race)->getStrBonus()
+		<< "\n\tDexterity: " << p1->getDex() + (*p1Race)->getDexBonus()
+		<< "\n\tConstitution: " << p1->getCon() + (*p1Race)->getConBonus()
+		<< "\n\tIntelligence: " << p1->getInt() + (*p1Race)->getIntBonus()
+		<< "\n\tWisdom: " << p1->getWis() + (*p1Race)->getWisBonus()
+		<< "\n\tCharisma: " << p1->getCha() + (*p1Race)->getChaBonus()
+		<< "\nStarting HP: " << (*p1Class)->getHP()
+		<< "\nArmor Proficiency: " << (*p1Class)->getArmorProfs()
+		<< "\nWeapon Proficiency: " << (*p1Class)->getWeaponProfs()
+		<< "\nTool Proficiency: " << (*p1Class)->getToolProfs()
+		<< "\nSkill Proficiency: " << (*p1Class)->getSkillProfs()
+		<< "\nSaving Throws: " << (*p1Class)->getSavingThrows()
+		<< "\nAge: " << (*p1Race)->getAge()
+		<< "\nAlignment: " << (*p1Race)->getAlignment()
+		<< "\nSize: " << (*p1Race)->getSize()
+		<< "\nSpeed: " << (*p1Race)->getSpeed()
+		<< "\nRacial Skills: " << (*p1Race)->getRaceSkills()
+		<< "\nRace Weapon Proficiency: " << (*p1Race)->getRaceWeaponProfs()
+		<< "\nLanguages: " << (*p1Race)->getLanguages()
+		<< endl;
 }
-*/
+
 
 void swapScores(Player* p1) {
 	//input integers corresponding to ability scores and swap, then refresh screen
@@ -276,58 +294,43 @@ void swapScores(Player* p1) {
 	p1->printPlayerStats();
 }
 
-void rollHitpoints(Player* p1) {	//Only allow this once
-	/*
-	int result = 0;
-	
-	for (int i = 1; i <= p1->getPlayerLevel(); i++) {
-		system("cls");
-		cout << "Set Hitpoints"
-			<< "\nRoll for Level: " << i
-			<< "\nHit Dice: 1d" << p1->getHitDice() << endl;
-		if (i == 1) {
-			p1->setHitpoints(p1->getHitDice() + (p1->getCon()-10)/2);
-			p1->printHitpoints();
-			system("pause");
-		}
-		else {
-			cout << "\n1. Average Roll"
-				<< "\n2. Random Roll"
-				<< "\n\nEnter your choice: ";
-			cin >> result;
-			switch (result) {
-			case 1: //Average Roll
-				p1->setHitpoints((p1->getHitDice() / 2 + 1) + (p1->getCon()-10)/2);
-				break;
-			case 2: //Random Roll
-				p1->setHitpoints(p1->rollDice(1, p1->getHitDice()) + (p1->getCon() - 10) / 2);
-				break;
-			default:
-				break;
-			}
-		}
-	}
-	p1->printHitpoints();
-	p1->setIsHPSet(true);
-	*/
+void rollHitpoints(Player* p1, CharClass** p1Class, Race** p1Race) {	//Only allow this once
 
-	//Pass p1 constitution score to charclasses.h
+	(*p1Class)->setHP(p1->getCon() + (*p1Race)->getConBonus());
+	cout << "\nStarting HP: " << (*p1Class)->getHP() << endl;
+
 }
 
-/*
-void setLevel(Player* p1) {
-	int level = 1;
-	system("cls");
-	cout << "\t\tSet Level"
-		<< "\nEnter your level (1-20): ";
-	cin >> level;
-	if (!(level >= 1 || level <= 20)) {
-		level = 1;
-	}
-	p1->setPlayerLevel(level);
-	cout << "\nLevel: " << p1->getPlayerLevel() << endl;
+void saveToFile(Player* p1, CharClass** p1Class, Race** p1Race) {
+	ofstream out;
+	out.open("myCharacter.txt");
+		out << "\t\tPlayer Character" << "\n";
+	out << "\nRace: " << (*p1Race)->getRaceName();
+	out << "\nClass: " << (*p1Class)->getClassName();
+	out << "\nCharacter Name: " << (*p1Race)->getPlayerName();
+	out << "\nAbility Scores: ";
+	out << "\n\tStrength: " << p1->getStr() + (*p1Race)->getStrBonus();
+	out << "\n\tDexterity: " << p1->getDex() + (*p1Race)->getDexBonus();
+	out << "\n\tConstitution: " << p1->getCon() + (*p1Race)->getConBonus();
+	out << "\n\tIntelligence: " << p1->getInt() + (*p1Race)->getIntBonus();
+	out << "\n\tWisdom: " << p1->getWis() + (*p1Race)->getWisBonus();
+	out << "\n\tCharisma: " << p1->getCha() + (*p1Race)->getChaBonus();
+	out << "\nStarting HP: " << (*p1Class)->getHP();
+	out << "\nArmor Proficiency: " << (*p1Class)->getArmorProfs();
+	out << "\nWeapon Proficiency: " << (*p1Class)->getWeaponProfs();
+	out << "\nTool Proficiency: " << (*p1Class)->getToolProfs();
+	out << "\nSkill Proficiency: " << (*p1Class)->getSkillProfs();
+	out << "\nSaving Throws: " << (*p1Class)->getSavingThrows();
+	out << "\nAge: " << (*p1Race)->getAge();
+	out << "\nAlignment: " << (*p1Race)->getAlignment();
+	out << "\nSize: " << (*p1Race)->getSize();
+	out << "\nSpeed: " << (*p1Race)->getSpeed();
+	out << "\nRacial Skills: " << (*p1Race)->getRaceSkills();
+	out << "\nRace Weapon Proficiency: " << (*p1Race)->getRaceWeaponProfs();
+	out << "\nLanguages: " << (*p1Race)->getLanguages();
+		out << endl;
+	out.close();
 }
-*/
 
 int main()
 {
@@ -336,7 +339,7 @@ int main()
 	CharClass *p1Class;
 	Race      *p1Race;
 
-	while (choice != 7) {
+	while (choice != 8) {
 		choice = menu();
 		switch (choice) {
 			case 1: //Roll Ability Scores
@@ -355,6 +358,7 @@ int main()
 				cout << p1Race->getRaceName()   << endl;
 				cout << p1Race->getAlignment()  << endl;
 
+				system("pause");
 				break;
 			case 3: //Select Class
 				setClass(&p1Class);
@@ -368,26 +372,25 @@ int main()
 
 				system("pause");
 				break;
-			case 4: //Swap Scores
+			case 4: //Swap Scores		//Once HP has been rolled, disallow swapping scores
 				swapScores(&p1);
 				system("pause");
 				break;
 			case 5: //Roll Hitpoints
-				/*
-				if (p1.getIsHPSet() == false) {
-					rollHitpoints(&p1);
-				}
-				else {
-					cout << "\n\nHP has already been set." << endl;
-				}
-				*/
+				rollHitpoints(&p1, &p1Class, &p1Race);
 				system("pause");
 				break;
 			case 6:	//View Character
-				viewCharacter(&p1);
+				viewCharacter(&p1, &p1Class, &p1Race);
+
 				system("pause");
 				break;
-			case 7:	//Exit
+
+			case 7: //Save to File
+				saveToFile(&p1, &p1Class, &p1Race);
+				system("pause");
+				break;
+			case 8:	//Exit
 				break;
 			default:
 				break;
