@@ -17,7 +17,7 @@ private:
 	int wisdom = 1;
 	int constitution = 2;
 	int dexterity = 0;
-	int intelegence = 0;
+	int intelligence = 0;
 	int charisma = 0;
 	string skills[20] = ["Darkvision", "Dwarven resilience", "Stone cutting", "Dwarven Toughness"];
 	string proficiency[20] = ["battle Axe", "hand axe", "light hammer", "war hammer"];
@@ -50,7 +50,7 @@ private:
 	int wisdom = 0;
 	int constitution = 2;
 	int dexterity = 0;
-	int intelegence = 0;
+	int intelligence = 0;
 	int charisma = 0;
 	string skills[20] = ["Darkvision", "Dwarven resilience", "Stone cutting", "Dwarven Armor Training"];
 	string proficiency[20] = ["battle Axe", "hand axe", "light hammer", "war hammer", "Light armor", "Medium armor"];
@@ -82,7 +82,7 @@ private:
 	int wisdom = 0;
 	int constitution = 0;
 	int dexterity = 2;
-	int intelegence = 2;
+	int intelligence = 2;
 	int charisma = 0;
 	string skills[20] = ["Darkvision",  "Fey Ancestry", "Trance"];
 	string proficiency[20] = ["perception", "Long sword", "Short Sword", "Short Bow", "Long Bow"];
@@ -116,7 +116,7 @@ private:
 	int wisdom = 1;
 	int constitution = 0;
 	int dexterity = 2;
-	int intelegence = 0;
+	int intelligence = 0;
 	int charisma = 0;
 	string skills[20] = ["Darkvision", "Fey Ancestry", "Trance", "Mask of the Wild"];
 	string proficiency[20] = ["perception", "Long sword", "Short Sword", "Short Bow", "Long Bow"];
@@ -151,7 +151,7 @@ private:
 	int wisdom = 0;
 	int constitution = 0;
 	int dexterity = 2;
-	int intelegence = 0;
+	int intelligence = 0;
 	int charisma = 1;
 	string skills[20] = ["Darkvision", "Fey Ancestry", "Trance", "Superior Darkvision of 120ft.", "Sunlight Sensitivity"];
 	string proficiency[20] = ["perception", "Rapiers", "Short Sword", "Hand Crossbows"];
@@ -185,7 +185,7 @@ private:
 	int wisdom = 0;
 	int constitution = 0;
 	int dexterity = 2;
-	int intelegence = 0;
+	int intelligence = 0;
 	int charisma = 1;
 	string skills[20] = ["Brave", "Lucky", "Halfling Nimbleness", "Naturally Stealthy"];
 	string proficiency[20];
@@ -218,7 +218,7 @@ private:
 	int wisdom = 0;
 	int constitution = 1;
 	int dexterity = 2;
-	int intelegence = 0;
+	int intelligence = 0;
 	int charisma = 0;
 	string skills[20] = ["Brave", "Lucky", "Halfling Nimbleness", "Stout Resilience"];
 	string proficiency[20];
@@ -252,7 +252,7 @@ private:
 	int wisdom = 1;
 	int constitution = 1;
 	int dexterity = 1;
-	int intelegence = 1;
+	int intelligence = 1;
 	int charisma = 1;
 	string skills[20];
 	string proficiency[20] = [""];
@@ -285,7 +285,7 @@ private:
 	int wisdom = 0;
 	int constitution = 0;
 	int dexterity = 0;
-	int intelegence = 0;
+	int intelligence = 0;
 	int charisma = 1;
 	string skills[20] = ["Draconic Ancestry", "Breath Weapon", "Damage Resistance"];
 	string proficiency[20];
@@ -319,7 +319,7 @@ private:
 	int wisdom = 0;
 	int constitution = 0;
 	int dexterity = 1;
-	int intelegence = 2;
+	int intelligence = 2;
 	int charisma = 0;
 	string skills[20] = ["Darkvision", "Gnome Cunning", " Natural Illusionist", "Speaking with Small Beast"];
 	string proficiency[20];
@@ -352,7 +352,7 @@ private:
 	int wisdom = 0;
 	int constitution = 1;
 	int dexterity = 0;
-	int intelegence = 2;
+	int intelligence = 2;
 	int charisma = 0;
 	string skills[20] = ["Darkvision", "Gnome Cunning", "Artificer's Lore", "Tinkers"];
 	string proficiency[20];
@@ -385,7 +385,7 @@ private:
 	int wisdom ;
 	int constitution;
 	int dexterity;
-	int intelegence;
+	int intelligence;
 	int charisma;
 	string skills[20] = ["Darkvision", "Fey ancestry"];
 	string proficiency[20];
@@ -419,7 +419,7 @@ private:
 	int wisdom = 0;
 	int constitution = 1;
 	int dexterity = 0;
-	int intelegence = 0;
+	int intelligence = 0;
 	int charisma = 0;
 	string skills[20] = ["Darkvision", "Relentless Endurance", "Savage Attacks"];
 	string proficiency[20] = ["intimidation"];
@@ -451,7 +451,7 @@ private:
 	int wisdom = 0;
 	int constitution = 0;
 	int dexterity = 0;
-	int intelegence = 1;
+	int intelligence = 1;
 	int charisma = 1;
 	string skills[20] = ["Darkvision", "Hellish Resistance", "Infernal Legacy"];
 	string proficiency[20];
