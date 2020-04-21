@@ -1,47 +1,6 @@
 #pragma once
 #include <string>
 
-/*
-class PlayerRace {
-
-private:
-	string name;
-	int health;
-	string abilityScoreIncrease;
-	int age;
-	string allignment;
-	double size;
-	int speed;
-	string Languages;
-	string race;
-
-public:
-	string setName();
-	int setHealth();
-	string setAbilityScoreIncrease();
-	int setAge();
-	string setAllignment();
-	double setSize();
-	int setSpeed();
-	string setLanguage();
-	string setRace();
-
-	void virtual print();
-
-	getName();
-	getHealth();
-	getAbilityScore();
-	getAge();
-	getAllignment();
-	getSize();
-	getSpeed();
-	getLanguage();
-	getRace();
-
-
-
-};
-*/
 
 
 class HillDwarf{
@@ -54,21 +13,24 @@ private:
 	string allignment;
 	int size;
 	int speed = 25;
-	string abilityScoreIncrease = "Wisdom +1, Constitution +2";
+	int strength = 0;
+	int wisdom = 1;
+	int constitution = 2;
+	int dexterity = 0;
+	int intelegence = 0;
+	int charisma = 0;
 	string skills[20] = ["Darkvision", "Dwarven resilience", "Stone cutting", "Dwarven Toughness"];
 	string proficiency[20] = ["battle Axe", "hand axe", "light hammer", "war hammer"];
 	string language[10] = ["Common", "Dwarvish"];
 
 public:
+
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
-
-	string addSkill();
-	string addProfiviency();
+	
 
 	void print();
 
@@ -84,21 +46,23 @@ private:
 	string allignment;
 	int size;
 	int speed = 25;
-	string abilityScoreIncrease = "Strength +2, Constitution +2";
+	int strength = 2;
+	int wisdom = 0;
+	int constitution = 2;
+	int dexterity = 0;
+	int intelegence = 0;
+	int charisma = 0;
 	string skills[20] = ["Darkvision", "Dwarven resilience", "Stone cutting", "Dwarven Armor Training"];
 	string proficiency[20] = ["battle Axe", "hand axe", "light hammer", "war hammer", "Light armor", "Medium armor"];
 	string language[10] = ["Common", "Dwarvish"];
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
 
-	string addSkill();
-	string addProfiviency();
 
 	void print();
 
@@ -114,7 +78,12 @@ private:
 	string allignment;
 	int size;
 	int speed = 30;
-	string abilityScoreIncrease = "Dexterity +2, Intelegence +2";
+	int strength = 0;
+	int wisdom = 0;
+	int constitution = 0;
+	int dexterity = 2;
+	int intelegence = 2;
+	int charisma = 0;
 	string skills[20] = ["Darkvision",  "Fey Ancestry", "Trance"];
 	string proficiency[20] = ["perception", "Long sword", "Short Sword", "Short Bow", "Long Bow"];
 	string Language[20] = ["Elvish", "Common"];
@@ -122,14 +91,11 @@ private:
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
 
-	string addSkill();
-	string addProfiviency();
 
 	void print();
 
@@ -146,7 +112,12 @@ private:
 	string allignment;
 	int size;
 	int speed = 35;
-	string abilityScoreIncrease = "Dexterity +2, Wisdom +1";
+	int strength = 0;
+	int wisdom = 1;
+	int constitution = 0;
+	int dexterity = 2;
+	int intelegence = 0;
+	int charisma = 0;
 	string skills[20] = ["Darkvision", "Fey Ancestry", "Trance", "Mask of the Wild"];
 	string proficiency[20] = ["perception", "Long sword", "Short Sword", "Short Bow", "Long Bow"];
 	string language[20] = ["Elvish", "Common"];
@@ -154,14 +125,12 @@ private:
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
 
-	string addSkill();
-	string addProfiviency();
+
 
 	void print();
 
@@ -178,7 +147,12 @@ private:
 	string allignment;
 	int size;
 	int speed = 30;
-	string abilityScoreIncrease = "Dexterity +2, Charisma + 1";
+	int strength = 0;
+	int wisdom = 0;
+	int constitution = 0;
+	int dexterity = 2;
+	int intelegence = 0;
+	int charisma = 1;
 	string skills[20] = ["Darkvision", "Fey Ancestry", "Trance", "Superior Darkvision of 120ft.", "Sunlight Sensitivity"];
 	string proficiency[20] = ["perception", "Rapiers", "Short Sword", "Hand Crossbows"];
 	string spells[3] = ["Dancing Lights", "Faerie Fire(Level 3)", "Darkness (Level 5)"];
@@ -186,14 +160,12 @@ private:
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
 
-	string addSkill();
-	string addProficiency();
+
 
 	void print();
 
@@ -209,21 +181,24 @@ private:
 	string allignment;
 	int size;
 	int speed = 25;
-	string abilityScoreIncrease = "Dexterity + 2, Chrisma +1";
+	int strength = 0;
+	int wisdom = 0;
+	int constitution = 0;
+	int dexterity = 2;
+	int intelegence = 0;
+	int charisma = 1;
 	string skills[20] = ["Brave", "Lucky", "Halfling Nimbleness", "Naturally Stealthy"];
 	string proficiency[20];
 	string languages[20] = ["Common", "Halfling"];
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
 
-	string addSkill();
-	string addProficiency();
+
 
 	void print();
 
@@ -239,21 +214,24 @@ private:
 	string allignment;
 	int size;
 	int speed = 25;
-	string abilityScoreIncrease = "Dexterity + 2, Constitution +1";
+	int strength = 0;
+	int wisdom = 0;
+	int constitution = 1;
+	int dexterity = 2;
+	int intelegence = 0;
+	int charisma = 0;
 	string skills[20] = ["Brave", "Lucky", "Halfling Nimbleness", "Stout Resilience"];
 	string proficiency[20];
 	string languages[20] = ["Common", "Halfling"];
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
 
-	string addSkill();
-	string addProficiency();
+
 
 	void print();
 
@@ -270,20 +248,24 @@ private:
 	int size;
 	int speed = 30;
 	string abilityScoreIncrease = "any +1";
+	int strength = 1;
+	int wisdom = 1;
+	int constitution = 1;
+	int dexterity = 1;
+	int intelegence = 1;
+	int charisma = 1;
 	string skills[20];
 	string proficiency[20] = [""];
 	string languages[20] = ["Common"];
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
 
-	string addSkill();
-	string addProficiency();
+
 
 	void print();
 
@@ -299,7 +281,12 @@ private:
 	string allignment;
 	int size;
 	int speed = 30;
-	string abilityScoreIncrease = "Strength +2, Chrisma +1";
+	int strength = 2;
+	int wisdom = 0;
+	int constitution = 0;
+	int dexterity = 0;
+	int intelegence = 0;
+	int charisma = 1;
 	string skills[20] = ["Draconic Ancestry", "Breath Weapon", "Damage Resistance"];
 	string proficiency[20];
 	string languages[20] = ["Common", "Draconic"];
@@ -307,16 +294,13 @@ private:
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
-	string setAncestry;
+	string setAncestry();
 
-	string addSkill();
-	string addProficiency();
-
+	
 	void print();
 
 };
@@ -331,21 +315,24 @@ private:
 	string allignment;
 	int size;
 	int speed = 25;
-	string abilityScoreIncrease = "Intelligence +2, Dexterity +1";
+	int strength = 0;
+	int wisdom = 0;
+	int constitution = 0;
+	int dexterity = 1;
+	int intelegence = 2;
+	int charisma = 0;
 	string skills[20] = ["Darkvision", "Gnome Cunning", " Natural Illusionist", "Speaking with Small Beast"];
 	string proficiency[20];
 	string languages[20] = ["Common", "Gnome"];
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
 
-	string addSkill();
-	string addProficiency();
+
 
 	void print();
 
@@ -361,23 +348,24 @@ private:
 	string allignment;
 	int size;
 	int speed = 25;
-	string abilityScoreIncrease = "Intelligence +2, Constitution +1";
+	int strength = 0;
+	int wisdom = 0;
+	int constitution = 1;
+	int dexterity = 0;
+	int intelegence = 2;
+	int charisma = 0;
 	string skills[20] = ["Darkvision", "Gnome Cunning", "Artificer's Lore", "Tinkers"];
 	string proficiency[20];
 	string languages[20] = ["Common", "Gnome"];
-	string Tinkers;
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
-	string setTinkers();
 
-	string addSkill();
-	string addProfiviency();
+
 
 	void print();
 
@@ -393,21 +381,25 @@ private:
 	string allignment;
 	int size;
 	int speed = 30;
-	string abilityScoreIncrease = "CHarisma +2 and +1 to any of choice";
+	int strength;
+	int wisdom ;
+	int constitution;
+	int dexterity;
+	int intelegence;
+	int charisma;
 	string skills[20] = ["Darkvision", "Fey ancestry"];
 	string proficiency[20];
 	string languages[20] = ["Common", "Elvish"];
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
 
-	string addSkill();
-	string addProfiviency();
+
+
 
 	void print();
 
@@ -423,21 +415,23 @@ private:
 	string allignment;
 	int size;
 	int speed = 30;
-	string abilityScoreIncrease = "Strength +2, Constitution +1";
+	int strength = 2;
+	int wisdom = 0;
+	int constitution = 1;
+	int dexterity = 0;
+	int intelegence = 0;
+	int charisma = 0;
 	string skills[20] = ["Darkvision", "Relentless Endurance", "Savage Attacks"];
 	string proficiency[20] = ["intimidation"];
 	string languages[20] = ["Common", "orc"];
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
 
-	string addSkill();
-	string addProfiviency();
 
 	void print();
 
@@ -453,7 +447,12 @@ private:
 	string allignment;
 	int size;
 	int speed = 30;
-	string abilityScoreIncrease = "Intelligence +1, Charisma +2";
+	int strength = 0;
+	int wisdom = 0;
+	int constitution = 0;
+	int dexterity = 0;
+	int intelegence = 1;
+	int charisma = 1;
 	string skills[20] = ["Darkvision", "Hellish Resistance", "Infernal Legacy"];
 	string proficiency[20];
 	string languages[20] = ["Common", "Infernal"];
@@ -461,14 +460,11 @@ private:
 
 public:
 	string setName();
-	int setHealth();
+	int setHealth(int totalHealth);
 	string setAge();
 	string setAllignment();
 	int setSize();
-	string setLanguage();
 
-	string addSkill();
-	string addProfiviency();
 
 	void print();
 
