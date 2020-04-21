@@ -1,9 +1,14 @@
 #include <iostream>
 #include"player.h"
 
+#ifndef CHARCLASSES_H
+#define CHARCLASSES_H
+#include "charclasses.h"
+#endif
+
 int menu() {
 	int choice;
-	system("cls");
+	//system("cls");
 	cout << "\t\tDnD Character Creator v1.0"
 		<< "\n1. Roll Ability Scores"
 		<< "\n2. Select Race"
@@ -75,27 +80,79 @@ void selectRace(Player* p1) {
 	//Pass race and subrace to races.h
 }
 
-void selectClass(Player* p1) {
+int selectClass() {
 	int choice;
 	system("cls");
 	cout << "\t\tSelect Class"
-		<< "\n1. Barbarian"
-		<< "\n2. Bard"
-		<< "\n3. Cleric"
-		<< "\n4. Druid"
-		<< "\n5. Fighter"
-		<< "\n6. Monk"
-		<< "\n7. Paladin"
-		<< "\n8. Ranger"
-		<< "\n9. Rogue"
+		<< "\n 1. Barbarian"
+		<< "\n 2. Bard"
+		<< "\n 3. Cleric"
+		<< "\n 4. Druid"
+		<< "\n 5. Fighter"
+		<< "\n 6. Monk"
+		<< "\n 7. Paladin"
+		<< "\n 8. Ranger"
+		<< "\n 9. Rogue"
 		<< "\n10. Sorcerer"
 		<< "\n11. Warlock"
 		<< "\n12. Wizard"
 		<< "\nEnter your choice: ";
 	cin >> choice;
+	return choice;
 	//p1->setClass(choice);
 	//Pass choice to charclasses.h
 }
+
+void setClass(CharClass **p1Class) {
+	int playerClass = selectClass();
+
+	switch (playerClass) {
+	case BARBARIAN:
+		*p1Class = new Barbarian();
+		break;
+	case BARD:
+		*p1Class = new Bard();
+		(*p1Class)->setToolProfs(); // Some classes let you set tool
+		break;                      // proficiencies, some don't.
+	case CLERIC:
+		*p1Class = new Cleric();
+		break;
+	case DRUID:
+		*p1Class = new Druid();
+		break;
+	case FIGHTER:
+		*p1Class = new Fighter();
+		break;
+	case MONK:
+		*p1Class = new Monk();
+		(*p1Class)->setToolProfs();
+		break;
+	case PALADIN:
+		*p1Class = new Paladin();
+		break;
+	case RANGER:
+		*p1Class = new Ranger();
+		break;
+	case ROGUE:
+		*p1Class = new Rogue();
+		break;
+	case SORCERER:
+		*p1Class = new Sorcerer();
+		break;
+	case WARLOCK:
+		*p1Class = new Warlock();
+		break;
+	case WIZARD:
+		*p1Class = new Wizard();
+		break;
+	default:
+		cout << "Error occured in setClass()" << endl;
+	}
+
+	(*p1Class)->setSkillProfs();
+}
+
+		
 
 void rollScores(Player* p1) {
 	//Will require a pointer to the Player object
@@ -189,7 +246,8 @@ void setLevel(Player* p1) {
 int main()
 {
 	int choice = 0;
-	Player p1;
+	Player     p1;
+	CharClass *p1Class;
 
 	while (choice != 8) {
 		choice = menu();
@@ -204,25 +262,17 @@ int main()
 				system("pause");
 				break;
 			case 2:	//Select Race
-				/*
-				if (p1.getIsRaceSet() == false) {
-					selectRace(&p1);
-				}
-				else {
-					cout << "\n\nRace has already been set." << endl;
-				}
-				*/
-				system("pause");
 				break;
 			case 3: //Select Class
-				/*
-				if (p1.getIsClassSet() == false) {
-					selectClass(&p1);
-				}
-				else {
-					cout << "\n\nClass has already been set." << endl;
-				}
+				setClass(&p1Class);
+
+				/* Testing to make sure the function works
+				cout << p1Class->getClassName()  << endl;
+				cout << p1Class->getSkillProfs() << endl;
+				cout << p1Class->getArmorProfs() << endl;
+				cout << p1Class->getToolProfs()  << endl;
 				*/
+
 				system("pause");
 				break;
 			case 4: //Swap Scores
