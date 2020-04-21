@@ -1,14 +1,11 @@
 #include"player.h"
 
 Player::Player() {
-	for (int i = 1; i <= 6; i++) {
-		setRaceStatBonus(i, 0);
-	}
 	//setRace(1);	//This way there is no class until the user selects it
 	//setClass(1);
 	srand(time(NULL));
 }
-
+/*
 Player::Player(int pRace, int pSubRace, int pClass) {
 	for (int i = 1; i <= 6; i++) {
 		setRaceStatBonus(i, 0);
@@ -18,7 +15,7 @@ Player::Player(int pRace, int pSubRace, int pClass) {
 	isRaceSet = true;
 	isClassSet = true;
 	srand(time(NULL));
-}
+}*/
 
 void Player::setPlayerLevel(int level) {
 	playerLevel = level;
@@ -29,6 +26,7 @@ int Player::getPlayerLevel() {
 	return playerLevel;
 }
 
+/*
 bool Player::getIsRaceSet() {
 	return isRaceSet;
 }
@@ -52,7 +50,7 @@ void Player::setRaceStatBonus(int stat, int amount) {
 		case 6: raceCha = amount;
 			break;
 	}
-}
+}*/
 
 int Player::getStat(int num) {
 	switch (num) {
@@ -251,18 +249,20 @@ void Player::swapStat(int first, int second) {
 }
 
 void Player::printPlayerStats() {
-	cout << "\n\tStrength: " << strength + raceStr << " (" << (strength + raceStr - 10) / 2 << ")"
-		<< "\n\tDexterity: " << dexterity + raceDex << " (" << (dexterity + raceDex - 10) / 2 << ")"
-		<< "\n\tConstitution: " << constitution + raceCon << " (" << (constitution + raceCon - 10) / 2 << ")"
-		<< "\n\tIntelligence: " << intelligence + raceInt << " (" << (intelligence + raceInt - 10) / 2 << ")"
-		<< "\n\tWisdom: " << wisdom + raceWis << " (" << (wisdom + raceWis - 10) / 2 << ")"
-		<< "\n\tCharisma: " << charisma + raceCha << " (" << (charisma + raceCha - 10) / 2 << ")"
+	cout << "\n\tStrength: " << strength<< " (" << (strength - 10) / 2 << ")"
+		<< "\n\tDexterity: " << dexterity<< " (" << (dexterity - 10) / 2 << ")"
+		<< "\n\tConstitution: " << constitution<< " (" << (constitution - 10) / 2 << ")"
+		<< "\n\tIntelligence: " << intelligence<< " (" << (intelligence - 10) / 2 << ")"
+		<< "\n\tWisdom: " << wisdom<< " (" << (wisdom - 10) / 2 << ")"
+		<< "\n\tCharisma: " << charisma<< " (" << (charisma - 10) / 2 << ")"
 		<< endl;
 }
 
+/*
 void Player::printHitpoints() {
 	cout << "Hitpoints: " << hitpoints << endl;
 }
+*/
 
 int Player::rollDice(int rolls, int sides) {	//(# of dice rolled, # of sides on each dice)
 	int total = 0;
@@ -282,6 +282,7 @@ void Player::setPlayerStats() {
 	charisma = rollDice(3, 6);
 }
 
+/*
 void Player::setRaceStats(int pRace) {
 	int score1, score2 = 0;
 
@@ -580,31 +581,33 @@ void Player::setClass(int pClass) {
 string Player::getCharacter() {
 	return "Race: " + race + "\nClass: " + playerClass;
 }
+*/
 
 int Player::getStr() {
-	return strength + raceStr;
+	return strength;
 }
 
 int Player::getDex() {
-	return dexterity + raceDex;
+	return dexterity;
 }
 
 int Player::getCon() {
-	return constitution + raceCon;
+	return constitution;
 }
 
 int Player::getInt() {
-	return intelligence + raceInt;
+	return intelligence;
 }
 
 int Player::getWis() {
-	return wisdom + raceWis;
+	return wisdom;
 }
 
 int Player::getCha() {
-	return charisma + raceCha;
+	return charisma;
 }
 
+/*
 bool Player::getIsHPSet() {
 	return isHPSet;
 }
@@ -612,6 +615,7 @@ bool Player::getIsHPSet() {
 void Player::setIsHPSet(bool b) {
 	isHPSet = b;
 }
+*/
 
 bool Player::getAreScoresRolled() {
 	return areScoresRolled;

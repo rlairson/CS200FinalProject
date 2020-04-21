@@ -71,7 +71,8 @@ void selectRace(Player* p1) {
 		default:
 			break;
 	}
-	p1->setRace(race, subRace);
+	//p1->setRace(race, subRace);
+	//Pass race and subrace to races.h
 }
 
 void selectClass(Player* p1) {
@@ -92,7 +93,8 @@ void selectClass(Player* p1) {
 		<< "\n12. Wizard"
 		<< "\nEnter your choice: ";
 	cin >> choice;
-	p1->setClass(choice);
+	//p1->setClass(choice);
+	//Pass choice to charclasses.h
 }
 
 void rollScores(Player* p1) {
@@ -108,12 +110,12 @@ void viewCharacter(Player* p1) {
 	//Will require a pointer to the Player object
 	system("cls");
 	cout << "\t\tPlayer Character\n"
-		<< p1->getCharacter()
+		//<< p1->getCharacter()
 		<< "\nLevel: " << p1->getPlayerLevel()
 		<< "\nAbility Scores: ";
 	p1->printPlayerStats();
-	p1->printHitpoints();
-	cout << "Hit Dice: 1d" << p1->getHitDice()
+	//p1->printHitpoints();
+	cout //<< "Hit Dice: 1d" << p1->getHitDice()
 		<< "\nProficiency Bonus: (+" << p1->getProficiencyBonus()<<")"<< endl;
 }
 
@@ -134,8 +136,9 @@ void swapScores(Player* p1) {
 }
 
 void rollHitpoints(Player* p1) {	//Only allow this once
+	/*
 	int result = 0;
-
+	
 	for (int i = 1; i <= p1->getPlayerLevel(); i++) {
 		system("cls");
 		cout << "Set Hitpoints"
@@ -165,6 +168,9 @@ void rollHitpoints(Player* p1) {	//Only allow this once
 	}
 	p1->printHitpoints();
 	p1->setIsHPSet(true);
+	*/
+
+	//Pass p1 constitution score to charclasses.h
 }
 
 void setLevel(Player* p1) {
@@ -198,21 +204,25 @@ int main()
 				system("pause");
 				break;
 			case 2:	//Select Race
+				/*
 				if (p1.getIsRaceSet() == false) {
 					selectRace(&p1);
 				}
 				else {
 					cout << "\n\nRace has already been set." << endl;
 				}
+				*/
 				system("pause");
 				break;
 			case 3: //Select Class
+				/*
 				if (p1.getIsClassSet() == false) {
 					selectClass(&p1);
 				}
 				else {
 					cout << "\n\nClass has already been set." << endl;
 				}
+				*/
 				system("pause");
 				break;
 			case 4: //Swap Scores
@@ -224,12 +234,14 @@ int main()
 				system("pause");
 				break;
 			case 6: //Roll Hitpoints
+				/*
 				if (p1.getIsHPSet() == false) {
 					rollHitpoints(&p1);
 				}
 				else {
 					cout << "\n\nHP has already been set." << endl;
 				}
+				*/
 				system("pause");
 				break;
 			case 7:	//View Character
