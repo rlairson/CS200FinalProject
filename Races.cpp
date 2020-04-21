@@ -2,25 +2,19 @@
 
 
 /*Hill Dwarf*/
-HillDwarf::setName() {
+string HillDwarf::setName() {
 
-	cout >> "Enter the character name: ";
+	cout << "Enter the character name: ";
 	getline(cin, name);
 
 	this->name = name;
 
 }
 
-HillDwarf::setHealth(int totalHealth) {
+string HillDwarf::setAge() {
 
-	this->health = totalHealth;
-
-}
-
-HillDwarf::setAge() {
-
-	cout >> "Dwarf's mature at the age of 50 and live to aroung 350 years old.";
-	cout >> "Enter the age of your character?";
+	cout << "Dwarf's mature at the age of 50 and live to aroung 350 years old.";
+	cout << "Enter the age of your character?";
 	getline(cin, age);
 
 	this->age = age;
@@ -29,15 +23,15 @@ HillDwarf::setAge() {
 
 HillDwarf::setAlignment() {
 
-	cout >> "List of alignments:"
-		>> "Chaotic Evil\n"
-		>> "Chaotic Neutral\n"
-		>> "Chaotic Lawful\n"
-		>> "Neutral\n"
-		>> "Lawful Good\n"
-		>> "Lawful Neutral\n"
-		>> "Lawful Evil\n";
-	cout >> "Enter the alignment of the character: ";
+	cout << "List of alignments:"
+		<< "Chaotic Evil\n"
+		<< "Chaotic Neutral\n"
+		<< "Chaotic Lawful\n"
+		<< "Neutral\n"
+		<< "Lawful Good\n"
+		<< "Lawful Neutral\n"
+		<< "Lawful Evil\n";
+	cout << "Enter the alignment of the character: ";
 	getline(cin, alignment);
 
 	this->alignment = alignment;
