@@ -1,0 +1,25 @@
+		Player Character
+
+Race: Dragonborn
+Class: Rogue
+Character Name: Matt
+Ability Scores: 
+	Strength: 12
+	Dexterity: 14
+	Constitution: 6
+	Intelligence: 7
+	Wisdom: 9
+	Charisma: 10
+Starting HP: 6
+Armor Proficiency: Light armor
+Weapon Proficiency: Simple weapons, hand crossbows, longswords, rapiers, shortswords
+Tool Proficiency: Thieves's tools
+Skill Proficiency: Acrobatics, Athletics, Deception, Insight
+Saving Throws: Dexterity, Intelligence
+Age: 18
+Alignment: Chaotic Neutral
+Size: Medium
+Speed: 30
+Racial Skills: Dragonic Ancestry, Breath Weapon, Damage Resistance
+Race Weapon Proficiency: None
+Languages: Common, Dragonic
